@@ -1,0 +1,26 @@
+[item.default]
+cmd = ["./walk", "/home/lilydjwg/private"]
+dir = "$name"
+time_limit = 30
+count_limit = 20
+valid_percent = 50
+
+[item.Go]
+
+[item.Go_3rd]
+
+[item.Python]
+
+[item.Python2]
+cmd = ["python2", "./walk", "/home/lilydjwg/private"]
+dir = "Python"
+
+[item.Rust]
+
+[item.find]
+cmd = ["sh", "-c", "find /home/lilydjwg/private -type f -iname '*.jpg' | wc -l"]
+dir = "."
+
+[item.fd]
+cmd = ["sh", "-c", "fd -HI -i -t f -e jpg . /home/lilydjwg/private | wc -l"]
+dir = "."
