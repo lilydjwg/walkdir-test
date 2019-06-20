@@ -1,6 +1,6 @@
 .PHONY: all clean
 
-languages = Go Go_3rd Rust
+languages = Crystal Go Go_3rd Rust
 
 all: $(languages)
 

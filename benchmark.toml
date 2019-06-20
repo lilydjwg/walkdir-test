@@ -5,6 +5,8 @@ time_limit = 30
 count_limit = 20
 valid_percent = 50
 
+[item.Crystal]
+
 [item.Go]
 
 [item.Go_3rd]
