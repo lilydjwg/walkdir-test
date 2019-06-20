@@ -1,6 +1,6 @@
 def main(dirpath)
   count = 0
-  Dir[dirpath + "/**/*"].each do |path|
+  Dir.glob(dirpath + "/**/*") do |path|
       filetype = File.info(path, follow_symlinks: false).type
       if filetype.file? && path.downcase.ends_with?(".jpg")
         count += 1
