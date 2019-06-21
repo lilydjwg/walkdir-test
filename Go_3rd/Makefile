@@ -1,6 +1,8 @@
 .PHONY: all clean depends
 
-default: depends walk
+default: walk
+
+walk: depends
 
 depends:
 	go get github.com/karrick/godirwalk
